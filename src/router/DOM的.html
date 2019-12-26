@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+</head>
+<body>
+  <div id="head">
+    <a href="">1.这是link</a>
+    <h1>2.这是title</h1>
+  </div>
+  <div class="ct">3.这是内容ct</div>
+  <div class="footer">4.这是foot</div>
+
+
+  <script>
+    var head = document.getElementById('head');
+
+    console.log(head.innerText);
+    console.log(head.innerHTML);
+
+    var ct = document.getElementsByClassName('ct');
+    var newDiv = document.createElement("div");
+    var sd = document.querySelector('.ct');
+    var newContent = document.createTextNode('Hello');
+
+    newDiv.appendChild(newContent);  //在元素末尾添加
+    newDiv.insertBefore(newContent, newDiv.firstChild); //在某个元素之前 添加
+
+    console.log(document.body.childNodes.constructor)
+
+    console.log(newDiv);
+
+    sd.appendChild(head);
+
+    console.log(sd);
+    var ss=1;
+    ss += 2
+console.log(ss)
+
+  </script>
+
+
+</body>
+
+</html>
