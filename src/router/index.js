@@ -34,6 +34,5 @@ export default new Router({
       name: 'Attention',
       component: Attention
     }
-
   ]
 })
